@@ -1,0 +1,15 @@
+.todoCard h3{
+    width: 98%;
+    padding: 1vh;
+   background-color: azure;
+   margin: 0;
+   border-radius: 5px;
+}
+.todoCard p {
+    background-color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 1vh;
+    margin: 0;
+    border-radius: 5px;
+    color: white;
+}

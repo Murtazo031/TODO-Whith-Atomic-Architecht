@@ -1,0 +1,11 @@
+.modalAdd {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: antiquewhite;
+    width: 20vw;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}

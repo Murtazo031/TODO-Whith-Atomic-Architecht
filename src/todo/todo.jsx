@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TodoCard from "../components/molecules/todoCard/todoCard.jsx";
 import Button from "../components/atoms/button/button.jsx";
+import "./todo.css"
 
 export default function TodoList() {
   const [todoList, setTodoList] = useState([
@@ -116,10 +117,16 @@ export default function TodoList() {
             width:"100vw",
             height:"100vh",
             display:"flex",
+            flexDirection:"column",
+            gap:"2vh",
             alignItems:"center",
             justifyContent:"center",
+            position:"absolute",
+            top:"0",
+            left:"0",
+            backgroundColor:"rgba(0, 0, 0, 0.3)"
         }}>
-          <div>
+          <div className="modalAdd">
             <input
               value={addName}
               onChange={(e) => setAddName(e.target.value)}
@@ -240,8 +247,20 @@ export default function TodoList() {
           </li>
         ))}
       </ul>
-      {editModal && <div>
-          <div>
+      {editModal && <div  style={{
+            width:"100vw",
+            height:"100vh",
+            display:"flex",
+            flexDirection:"column",
+            gap:"2vh",
+            alignItems:"center",
+            justifyContent:"center",
+            position:"absolute",
+            top:"0",
+            left:"0",
+            backgroundColor:"rgba(0, 0, 0, 0.3)"
+        }}>
+          <div className="modalAdd">
             <input
               value={editName}
               onChange={(e) => setEditName(e.target.value)}

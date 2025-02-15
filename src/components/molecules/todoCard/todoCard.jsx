@@ -1,5 +1,4 @@
-import "./todoCard.css"
-
+import "./todoCard.css";
 
 export default function TodoCard({
   name,
@@ -12,13 +11,13 @@ export default function TodoCard({
 }) {
   return (
     <div
-    className="todoCard"
+      className="todoCard"
       style={{
         display: "flex",
-        flexDirection:"column",
-        alignItems:"start",
-        padding:"2vh",
-        gap:"1vh"
+        flexDirection: "column",
+        alignItems: "start",
+        padding: "2vh",
+        gap: "1vh",
       }}
     >
       <h3 style={{ textDecoration: Decoration }}>Name: {name}</h3> {/*Nom-str*/}
